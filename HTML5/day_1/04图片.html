@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-图片</title>
+</head>
+<body>
+    <!-- 
+        4、图片
+        路径：
+        1）绝对路径
+        ①网址
+        ②盘符
+        2）相对路径
+        ①平级  直接写
+        ②下一级  /
+        ③上一级  ../  上两级 ../../
+
+        标签：
+        <img/>
+
+        属性：
+        src  必须属性 路径
+        alt  图片不能正常显示给予提示
+        title  鼠标悬停给予提示
+     -->
+
+     <!-- 绝对路径 -->
+     <img src="http://b-ssl.duitang.com/uploads/item/201510/31/20151031151243_Tak4m.thumb.700_0.gif" 
+    alt="替换文字" title="绝对路径：百度图片"/>
+
+     <!-- 相对路径 -->
+     <!-- 平级 -->
+     <img src="img4.jpg" alt="替换：本层图片" title="本层图片">
+     <!-- 下一级 -->
+     <img src="images/img3.gif" alt="替换：下一层" title="images文件夹下的">
+     <!-- 上一级 -->
+     <img src="../xxx.jpg" alt="蜡笔小新" title="鼠标悬停给予提示"/>
+
+
+</body>
+</html>

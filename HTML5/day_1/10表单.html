@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        10、表单
+        1）作用
+        提交数据到服务器，使页面具有交互性
+        2）标签
+        <form action="提交的地址" name="表单名称" method="提交的方式get|post"></form>
+        get和post的区别：
+        ①get提交数据不安全，会在地址栏中显示， post安全
+        ②get只能提交少量的数据， post理论上没有限制
+
+        注意：一个页面可以有多个form，但是form之间不可以相互嵌套
+
+        3）表单元素
+        <input type="text"/>   普通文本框
+        <input type="password"/>  密码框
+        <input type="radio" name=""/>  单选按钮
+        <input type="checkbox">  多选按钮
+        <input type="hidden">  隐藏域
+        <input type="submit">  提交按钮
+        <input type="reset">  重置按钮
+        <input type="button">  没有功能的按钮
+        <input type="image" src="">  图片提交按钮
+        <button>提交 type=submit</button>  提交按钮
+        <button type="reset">重置</button>  重置按钮
+        <button type="button">没有功能的按钮</button>  没有功能的按钮
+        
+        <select name="" id="">  下拉列表
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10"></textarea>  多行文本框
+        <label for=""></label>  提升用户体验度，和input的id属性绑定
+
+        4）表单元素的属性
+        name  控件名称
+        value  当前值
+        checked  默认选中,配合单选按钮和多选按钮使用
+        selected  默认显示，配合option使用
+        placeholder   默认显示
+
+     -->
+     <form action="04图片.html" name="form1">
+        姓名：<input type="text" name="userName" placeholder="用户名"/>
+        <br>
+        密码框：<input type="password" name="password"/>
+        <br>
+        性别：
+        <!-- id和for对应 -->
+        <!-- name要一致 -->
+        <input type="radio" name="sex" value="man" id="man" checked>
+        <label for="man">男</label>
+        <input type="radio" name="sex" value="woman" id="woman">
+        <label for="woman">女</label>
+        <br>
+        爱好：
+        <!-- name要一致 -->
+        <input type="checkbox" name="hobby" value="sing">唱
+        <input type="checkbox" name="hobby" value="dance">跳
+        <input type="checkbox" name="hobby" value="rap">Rap
+        <br>
+        <!-- 用户看不见，但是会传到数据库 -->
+        隐藏域：<input type="hidden">
+        <br>
+
+        <select name="city" id="city1">
+            <optgroup label="城市">
+                <option value="0">北京</option>
+                <option value="1" selected>河北</option>
+            </optgroup>
+            <option value="2">天津</option>
+            <option value="3">哈尔滨</option>
+        </select>
+        <select name="city" id="city2">
+            <option value="0">北京</option>
+            <option value="1">河北</option>
+            <option value="2">天津</option>
+            <option value="3">哈尔滨</option>
+        </select>
+        <br>
+        留言板：
+        <textarea name="liuyan" id="liuyan" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="登录"/>
+        <input type="reset" value="取消"/>
+        <input type="button" value="没有功能的按钮"/>
+        <input type="image" src="images/img3.gif"/>
+        <button>提交</button>
+        <button type="reset">重置</button>
+        <button type="button">没有功能的按钮</button>
+     </form>
+
+</body>
+</html>

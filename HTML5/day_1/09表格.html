@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        9、表格
+        1）作用
+        存储数据，向用户展示数据
+        2）特点
+        同行等高
+        同列等宽
+        3）标签
+        <table></table>  表格
+        <tr></tr>   行  table row
+        <td></td>   列，单元格  table data cell
+        <th></th>   特殊的单元格，里面的内容默认水平居中且加粗
+        <thead></thead>  表格的头部
+        <tbody></tbody>   默认 表格的身体
+        <tfoot></tfoot>  表格的脚部
+        4）属性
+        ①table的属性
+        border  边框
+        cellpadding  设置内容距单元格的距离
+        cellspacing  设置单元格之间的距离，当取值为0时，变成一条线
+
+        ②tr的属性
+        align  设置内容的水平对齐方式，默认left，可以取值center|right
+        valign 设置内容的垂直对齐方式，默认middle，可以取值top|bottom
+
+        ③td的属性
+        colspan  跨列，水平合并  取值：合并几个取值就为几，删除的个数 = 合并的个数 - 1 ,水平合并删除同一行的td
+        rowspan  跨行，垂直合并  取值：合并几个取值就为几，删除的个数 = 合并的个数 - 1，垂直合并删除下面几行的td
+     -->
+
+
+    <!-- table>tr*3>td*3 -->
+    <table border="1" width="800" align="center" height="200" cellspacing="0">
+        <caption>表格的标题</caption>
+
+        <thead>
+            <tr>
+                <th>3行3列</th>
+                <th>3行3列</th>
+                <th>3行3列</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr align="center" valign="middle">
+                <td>3行3列</td>
+                <td>3行3列</td>
+                <td>3行3列</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr align="right">
+                <td>3行3列</td>
+                <td>3行3列</td>
+                <td>3行3列</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <!-- 合并 -->
+    <table border="1" width="400" height="400" align="left">
+        <caption>表格合并</caption>
+        <tr>
+            <td colspan="2"></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>
