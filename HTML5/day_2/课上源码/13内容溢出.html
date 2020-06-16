@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        9、内容溢出
+        overflow:; 
+        取值：
+        visible  默认值  直接溢出
+        hidden   溢出部分隐藏
+        auto   有溢出，显示滚动条，没有溢出不显示
+        scroll  无论是否溢出，都显示滚动条
+
+        10、一行文字溢出省略号显示
+        //文字在同一行显示 
+        white-space: nowrap;
+        //溢出部分隐藏
+        overflow: hidden;
+        //文本溢出 
+        text-overflow: ellipsis;
+
+        
+        */
+        .box{
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+            /* overflow: auto; */
+            overflow: scroll;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            /* 文字在同一行显示 */
+            white-space: nowrap;
+            /* 溢出部分隐藏 */
+            overflow: hidden;
+            /* 文本溢出 */
+            text-overflow: ellipsis;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa blanditiis a aliquid quas reiciendis sapiente voluptates repudiandae voluptatem ipsa maxime quis sequi minus doloremque repellat odio, voluptatum, sit beatae. Sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa blanditiis a aliquid quas reiciendis sapiente voluptates repudiandae voluptatem ipsa maxime quis sequi minus doloremque repellat odio, voluptatum, sit beatae. Sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa blanditiis a aliquid quas reiciendis sapiente voluptates repudiandae voluptatem ipsa maxime quis sequi minus doloremque repellat odio, voluptatum, sit beatae. Sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa blanditiis a aliquid quas reiciendis sapiente voluptates repudiandae voluptatem ipsa maxime quis sequi minus doloremque repellat odio, voluptatum, sit beatae. Sapiente.
+    </div>
+    <br>
+    <div class="box1">
+        发挥地方地方凉快地方都快疯了的开发了的开发了大幅度发快递浮动法
+    </div>
+    
+</body>
+</html>

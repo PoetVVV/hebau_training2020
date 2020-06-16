@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        4）伪对象选择器
+        在元素之前或者之后插入内容
+        ::before{
+            content:"";
+        }
+        ::after{
+            content:"";
+        }
+        */
+        .box::before{
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: block;
+        }
+        .box::after{
+            content: "";
+            width: 300px;
+            height: 20px;
+            background-color: green;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">盒子</div>
+</body>
+</html>

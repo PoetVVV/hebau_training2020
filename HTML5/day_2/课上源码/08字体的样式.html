@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        4、字体的样式——继承性
+        1）字体颜色
+        color:;
+        颜色的取值：
+        ①关键词  red  blue
+        ②十六进制  a-f 0-9  #000000  简写  #000
+        ③rgb(0,0,0)  取值0-255
+        ④rgba()  a:透明度  取值0-1
+
+        2）字体大小
+        font-size:16px;
+        浏览器支持的最小字体为12px
+
+        3）字体是否加粗
+        font-weight:;
+        取值：
+        normal  默认值
+        bold  加粗
+        100-900  400 = normal    700 = bold
+
+        4）字体样式
+        font-style:;
+        取值：
+        normal  默认值
+        italic  倾斜
+
+        5）字体
+        font-family:字体1,字体2,...;
+        */
+        .box{
+            /* color: red; */
+            /* color: #f00; */
+            /* color: rgb(255, 0, 0); */
+            /* color: rgba(255, 0, 0, .66); */
+
+            font-size: 26px;
+            font-weight: 700;
+            font-style: italic;
+            font-family: 幼圆,楷体;
+        }
+        b{
+            font-weight: 400;
+        }
+        i{
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">盒子</div>
+    <b>加粗</b>
+    <i>倾斜</i>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        2）关系选择器
+
+        ①子代选择器*
+        选择器1>选择器2{}
+        选中所有' 直接 '子代
+
+        ②后代选择器*
+        选择器1 选择器2{}
+        选中所有后代
+
+        ③相邻兄弟选择器
+        选择器1+选择器2{}
+        平级 挨着 后面的一个兄弟
+
+        ④通用兄弟选择器
+        选择器1~选择器2{}
+        平级 后面的所有兄弟
+        
+        */
+        /* .box>span{
+            color: red;
+        } */
+        /* .box>p>span{
+            color: red;
+        } */
+
+        /* .box span{
+            color: red;
+        } */
+
+        /* .two+p{
+            color: red;
+        } */
+        /* .two~p{
+            color: red;
+        } */
+        .two+p+p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>儿子span</span>
+        <p>儿子p
+            <span>孙子span</span>
+        </p>
+    </div>
+
+    <p>我是第1个p</p>
+    <p class="two">我是第2个p</p>
+    <p>我是第3个p</p>
+    <p>我是第4个p</p>
+    <p>我是第5个p</p>
+    
+</body>
+</html>

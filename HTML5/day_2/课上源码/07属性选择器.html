@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        5）属性选择器
+        利用的HTML的属性
+        []
+        [属性]
+        [属性=属性值]
+        元素[属性=属性值]
+        */
+        div[class=box]{
+            color: red;
+        }
+        input[type="submit"]{
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">盒子</div>
+    <div class="box1">盒子</div>
+    <div class="box">盒子</div>
+    <p class="box">段落</p>
+    <p class="box1">段落</p>
+    <p class="box">段落</p>
+    <input type="submit">
+    <input type="reset">
+</body>
+</html>

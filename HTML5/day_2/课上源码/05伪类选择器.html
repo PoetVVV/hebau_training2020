@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        3）伪类选择器
+        表示一个状态  :链接
+
+        ①鼠标悬停
+        :hover{}
+
+        ②第一个子元素
+        :first-child  第一个子元素是...
+        :first-of-type 第一个元素
+
+        ③第几个子元素
+        :nth-child(number|odd|even|倍数)  第几个'子'元素是...
+        :nth-of-type(number|odd|even|倍数)  第几个元素
+        
+        ④最后一个子元素
+        :last-child  最后一个子元素是...
+        :last-of-type  最后一个元素
+        
+        */
+        /* .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .box:hover{
+            background-color: gold;
+        } */
+
+        .box>div{
+            color: red;
+        }
+
+        /* .box>div:first-child{
+            color: green;
+        } */
+
+        .box>div:first-of-type{
+            color: green;
+        }
+
+        /* .box>div:last-child{
+            color: red;
+        } */
+       /*  .box>div:last-of-type{
+            color: red;
+        } */
+
+        /* .box>div:nth-child(3n){
+            color: red;
+        } */
+        /* .box>div:nth-of-type(4n){
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+
+    <div class="box">
+        <p>呵呵</p>
+        <div>第1个div</div>
+        <div>第2个div</div>
+        <div>第3个div</div>
+        <div>第4个div</div>
+        <div>第5个div</div>
+        <div>第6个div</div>
+        <div>第7个div</div>
+        <div>第8个div</div>
+        <div>第9个div</div>
+        <div>第10个div</div>
+    </div>
+    
+</body>
+</html>

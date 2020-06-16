@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        12、盒模型
+        1）标准盒模型  w3c盒模型
+        ①组成部分
+        content+padding+border+margin
+        内容     内边距  边框    外边距
+        玻璃杯   泡沫    快递盒  快递盒之间的距离
+
+        ②实际大小
+        实际宽度：width+padding+border+margin
+        高度：height+padding+border+margin
+
+        ③content  内容区域
+        width:;  设置元素的宽度
+        height:;  设置元素的高度
+        min-width:;
+        max-width:;
+        min-height:;
+        max-height:;
+
+        块级元素默认宽度为100%，行内元素宽度由内容撑开
+        块级元素和行内元素的高度都由内容撑开
+
+        块级元素可以设置宽高，行内元素设置宽高不生效
+
+        ④border 边框
+        border-style:solid(实线)|none(不显示);  必须属性  默认3px  黑色
+        border-width:;
+        border-color:;
+
+        简写：border:width style color;  四周的边框
+
+        border-top:width style color;
+        border-bottom:width style color;
+        border-left:width style color;
+        border-right:width style color;
+
+        ⑤padding  内边距  不能取负值和auto
+        设置内容距边框的距离
+
+        padding:value;  四周
+        padding:value value;  上下 左右
+        padding:value value value;  上 左右 下
+        padding:value value value value;  上 右 下 左(顺时针)
+
+        padding-top:;
+        padding-bottom:;
+        padding-left:;
+        padding-right:;
+
+        ⑥margin  外边距  可取正负、auto
+        设置元素之间的距离
+
+        margin:value;  四周
+        margin:value value;  上下 左右
+        margin:value value value;  上 左右 下
+        margin:value value value value;  上 右 下 左(顺时针)
+
+        margin-top:;
+        margin-bottom:;
+        margin-left:;
+        margin-right:;
+
+        应用：
+        块级元素水平居中
+        margin:0 auto;
+
+        注意：
+        垂直方向上外边距合并问题
+        当垂直方向上外边距相撞时，取 '较大值'
+
+        2）怪异盒模型  IE盒模型
+        
+        
+        
+        */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* border-style: solid;
+            border-width: 5px;
+            border-color: green; */
+            border: 5px solid green;
+            /* border-top: 10px solid green;
+            border-left: solid gold 10px; */
+
+            padding: 20px 40px 60px 80px;
+            /* margin-top: 100px;
+            margin-left: 100px;
+            margin-bottom: 100px;
+            margin-right: 100px; */
+            margin: 0 auto;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 31px 20px 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .one,.two{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+        .two{
+            background-color: purple;
+            margin-top: 100px;
+        }
+        .one{
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">哈哈哈哈</div>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+    </ul>
+
+    <div class="one"></div>
+    <div class="two"></div>
+    
+</body>
+</html>

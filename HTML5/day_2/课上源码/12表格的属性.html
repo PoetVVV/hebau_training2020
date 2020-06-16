@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        8、表格的属性
+        1）元素的大小
+        width:;  设置元素的宽度
+        height:;  设置元素的高度
+
+        2）内容距边框的距离
+        padding:;
+
+        3）边框折叠(cellspacing="0")
+        border-collapse:collapse;
+
+        4）边框
+        border:style color width;
+
+        5）单元格内容水平对齐方式
+        text-align:left|center|right;
+
+        6）单元格内容的垂直对齐方式(写在tr或td上)
+        vertical-align:middle|top|bottom;
+
+        7）表格水平居中
+        margin:0 auto;
+
+        8）背景
+        background:;
+        */
+        
+        table,td{
+            border: 1px solid red;
+        }
+        table{
+            width: 800px;
+            height: 300px;
+            margin: 0 auto;
+            text-align: center;
+            /* background-color: green;
+            background-image: url('images/img2.jpg'); */
+            border-collapse: collapse;
+        }
+        tr{
+            vertical-align: top;
+        }
+        tr:nth-child(odd){
+            background-color: skyblue;
+        }
+        tr:nth-child(even){
+            background-color: green;
+        }
+        tr:hover{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+        </tr>
+        <tr>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+        </tr>
+        <tr>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+        </tr>
+        <tr>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+        </tr>
+        <tr>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+            <td>哈哈哈哈哈</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

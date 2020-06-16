@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容溢出</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+            /* overflow: auto; */
+            /* overflow: scroll; */
+            overflow: auto;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing el
+        it. Eum, hic, at accusamus consequuntur eaque voluptatum pl
+        aceat ipsam quia voluptatibus nulla architecto laudantium quasi duci
+        mus sapiente illo doloribus, nisi delectus nobis!Lorem ipsum dolor sit amet 
+        consectetur adipisicing el, at accusamus consequuntur eaque voluptatum pl
+        aceat ipsam quia voluptatibus nulla architecto laudantium quasi duci
+        mus sapiente illo doloribus, nisi delectus nobis!Lorem ipsum dolor sit amet 
+        consectetur adipisicing el
+        it. Eum, hic,it. Eum, hic, at accusamus consequuntur eaque voluptatum pl
+        aceat ipsam quia voluptatibus nulla architecto laudantium quasi duci
+        mus sapiente illo doloribus, nisi delectus nobis
+    </div>
+    <br>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing el
+        it. Eum, adipisicing el
+        it. Eum, hic,it. Eum, hic, at accusamus consequuntur eaque voluptatum pl
+        aceat ipsam quia voluptatibus nulla architecto laudantium quasi duci
+        mus sapiente illo doloribus, nisi delectus nobis
+    </div>
+</body>
+</html>

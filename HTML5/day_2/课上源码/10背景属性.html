@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        6、背景属性
+        1）背景颜色
+        background-color:transparent(透明);
+
+        2）背景图片
+        background-image:url("");
+
+        3）背景图片是否平铺
+        background-repeat:repeat|no-repeat;
+
+        4）背景图片大小
+        background-size:x y;
+        取值：px %
+        当只取一个值，等比例缩放
+
+        5）背景图片定位
+        background-position:x y;
+        默认在元素的左上角
+        当只取一个值，第二个值默认居中
+        取值：
+        px %     left right top bottom center
+
+        左上角为起点:     取正值，往右下走；负值，往左上走
+
+        应用：雪碧图  css精灵 css sprite
+        ①定义
+        雪碧图是一项图片整合技术，把许多小图放在一张大图里面
+        ②原理
+        background-image:url();
+        background-position:;
+
+        6）背景图片固定
+        background-attachment:scroll|fixed(固定);
+
+        7）简写
+        background:颜色 图片 平铺 大小 定位 固定;
+        没有的取值，默认为默认值
+        注意：当简写属性和单个属性同时存在，简写属性写在单个属性的前面
+
+        
+        */
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            height: 3000px;
+            /* background-color: red;
+            background-image: url('images/img2.jpg');
+            background-repeat: no-repeat; */
+            /* background-size: 100% 100%; */
+            /* background-position: 200px -200px; */
+            /* background-attachment: fixed; */
+
+            background: red url("images/img2.jpg") no-repeat;
+            background-size: 100%;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0,0,0,.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

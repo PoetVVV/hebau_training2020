@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <select name="province" id="province">
+        <option value="">请选择</option>
+    </select>
+    <span>省</span>
+    <select name="city" id="city">
+        <option value="">请选择</option>
+    </select>
+    <span>市</span>
+    <select name="district" id="district">
+        <option value="">请选择</option>
+    </select>
+    <span>区/县</span>
+    <script>
+        //定义数据
+        var provinceDate = ['北京','天津','河北','山东','山西'];
+        var cityDate = [
+            ['北京市'],
+            ['天津市'],
+            ['张家口','石家庄','廊坊','秦皇岛','保定','唐山'],
+            ['济南','青岛','淄博','济宁','泰安'],
+            ['太原','大同']
+        ];
+        var districtDate = [
+            [
+                ['朝阳','西城','东城','海淀','宣武']
+            ],
+            [
+                ['和平','河东','河西','南开','河北']
+            ],
+            [
+                ['桥东','桥西','宣化'],
+                ['长安','桥西','新华'],
+                ['广阳','安次'],
+                ['海港','山海关','北戴河'],
+                ['竞秀','莲池','徐水'],
+                ['路南','路北','开平']
+            ],
+            [
+                ['天桥','市中','长清'],
+                ['市南','市北','城阳'],
+                ['淄川','张店','博山'],
+                ['竞秀','兖州'],
+                ['泰山','岱岳']
+            ],
+            [
+                ['小店','迎泽','杏花岭','尖草坪'],
+                ['城','矿','南郊','新荣']
+            ]
+        ];
+
+        //获取元素
+        var province = document.getElementById('province');
+        var city = document.getElementById('city');
+        var district = document.getElementById('district');
+
+        //创建省
+        for(var i = 0; i < provinceDate.length; i++){
+            //创建option
+            var opt = document.createElement('option');
+            //为option添加value属性
+            opt.value = i;
+            //为option添加文本内容
+            opt.innerHTML = provinceDate[i];
+            //将option添加到select中
+            province.appendChild(opt);
+        }
+
+        //显示城市
+        province.onchange = changeCity;
+
+        function changeCity(){
+            //获取省份的value
+            provinceValue = province.value;
+
+            //将城市节点中的选项只保留1个
+            city.length = 1;
+
+            if(provinceValue != ''){
+                for(var i = 0; i < cityDate[provinceValue].length; i++){
+                    //创建option
+                    var opt = document.createElement('option'); 
+                    //为option添加value属性
+                    opt.value = i;
+                    //为option添加文本内容
+                    opt.innerHTML = cityDate[provinceValue][i];
+                    //将option添加到城市节点中
+                    city.appendChild(opt);
+                }
+            }
+        }
+
+        //显示区
+        city.onchange = changeDistrict;
+
+        function changeDistrict(){
+            //获取市的value
+            cityValue = city.value;
+
+            //将区节点中的选项只保留1个
+            district.length = 1;
+
+            if(cityValue != ''){
+                for(var i = 0; i < districtDate[provinceValue][cityValue].length; i++){
+                    //创建option
+                    var opt = document.createElement('option'); 
+                    //为option添加value属性
+                    opt.value = i;
+                    //为option添加文本内容
+                    opt.innerHTML = districtDate[provinceValue][cityValue][i];
+                    //将option添加到区节点中
+                    district.appendChild(opt);
+                }
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

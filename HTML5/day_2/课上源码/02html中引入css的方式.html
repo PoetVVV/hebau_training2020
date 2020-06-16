@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/02style.css"/>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        2、HTML中引入css的方式
+        1）行内样式  内联样式  —— 只对当前元素生效，重用性低
+        利用HTML的style属性(除了br没有，其他元素都有的属性)
+        <div style="属性:属性值;属性:属性值;"></div>
+        <img src="" alt="" style="属性:属性值;属性:属性值;"/>
+
+        2）内部样式 ——只对当前页面生效
+        利用HTML的style标签
+        <head>
+            <style>
+                选择器{
+                    属性:属性值;
+                    属性:属性值;
+                    属性:属性值;
+                }
+            </style>
+        </head>
+        选择器：选中写样式的元素
+
+        3）外部样式  ——实现了内容与表现的完全分离，提高了代码的可重用性和可维护性
+        ①新建.css文件
+        ②通过link标签引入
+        <head>
+            <link href="" rel="stylesheet"/>
+        </head>
+
+        一个css文件可以被多个HTML文件引入，一个html文件可以引入多个css文件
+
+        引入方式的优先级：
+        行内样式>内部样式(外部样式)
+        内部样式和外部样式优先级相同，写在后面的生效
+
+    -->
+   <!--  <div style="width: 200px;height: 200px;background-color: red;">盒子</div>
+    <div style="width: 200px;height: 200px;background-color: red;">盒子2</div> -->
+
+    <!-- <div class="box" style="background-color: red;">盒子</div>
+    <p class="box">段落</p> -->
+
+    <div class="box">盒子</div>
+    <p class="box"></p>
+    
+</body>
+</html>
