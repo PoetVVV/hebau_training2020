@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        3、元素定位
+        1）属性
+        position:;
+        2）属性值
+        ①static  默认值  静态定位
+        ②relative  相对定位
+        相对于自己原位置定位
+        定位后原位置保留
+        配合left、top、right、bottom移动(当四个属性同时存在，左上的优先级高)
+        应用场景：
+        a、配合绝对定位使用
+        b、自己小范围移动
+
+        ③absolute  绝对定位
+        相对于已经定位(relative、absolute、fixed)的父元素定位，如果父元素没有定位，逐级往上找，最后相对于body定位
+        定位后原位置不保留
+        配合left、top、right、bottom移动(当四个属性同时存在，左上的优先级高)
+        应用场景：
+        形成独立的一层
+
+        ④fixed  固定定位
+        相对于流浏览器窗口定位
+        定位后原位置不保留
+        配合left、top、right、bottom移动(当四个属性同时存在，左上的优先级高)
+        应用场景：
+        固定在页面某个位置
+        
+        */
+        body{
+            height: 3000px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: fixed;
+            /* 相对于浏览器窗口往下走50% */
+            top: 50%;
+            /* 元素往上走高度的一半 */
+            margin-top: -100px;
+            /* 相对于浏览器窗口往右走50% */
+            left: 50%;
+            /* 元素自己往左走宽度的一半 */
+            margin-left: -100px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            top: 100px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="box1"></div>
+</body>
+</html>

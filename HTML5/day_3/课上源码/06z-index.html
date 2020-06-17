@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        4、堆叠顺序
+        z-index:;
+        取值number
+        取值越大，层级越往上(习惯最大值给999)
+        可以取负值
+        默认值为auto
+
+        同时定位后，后面的元素会覆盖前面的元素
+
+        必须配合定位使用(relative、absolute、fixed)
+        
+        */
+        .box{
+            width: 1000px;
+            height: 600px;
+            border: 2px solid red;
+            position: relative;
+        }
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 700;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            z-index: 666;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>

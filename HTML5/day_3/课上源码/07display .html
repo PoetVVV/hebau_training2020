@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        5、display属性
+        属性值：
+        block  块级元素
+        inline  行内元素
+        inline-block  行内块  即在同一行显示，又可以设置宽高和margin、padding的四周
+        行内块会识别代码之间的空白
+        常见的行内块：img、input、button、video等
+        none  隐藏，隐藏后原位置不保留
+        flex  弹性盒模型
+        
+        */
+        .box>div{
+            width: 33.33%;
+            height: 300px;
+            background-color: red;
+            /* display: inline-block; */
+        }
+        .box{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div><!-- 
+         --><div>2</div><!-- 
+         --><div>3</div>
+    </div>
+    hhhhhhh
+    
+</body>
+</html>

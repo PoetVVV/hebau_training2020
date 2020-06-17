@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- 
+       13、居中问题
+       1、元素内容水平居中
+       text-align:center;
+
+       2、块级元素水平居中
+       margin:0 auto;
+
+       3、一行文字垂直居中
+       line-height:;
+       当行高等于高，一行文字垂直居中
+
+       4、多行内容垂直居中
+       margin:20px 0;(写在子元素上)
+       padding:20px 0;(写在父元素上)
+
+       5、子元素在父元素中水平垂直居中
+       1）子元素宽高已知
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+       ①margin
+       <style>
+            .box{
+                width: 500px;
+                height: 500px;
+                background-color: palegoldenrod;
+                float: left;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: palegreen;
+                margin:150px;
+            }
+        </style>
+
+        ②padding
+        <style>
+            .box{
+                width: 500px;
+                height: 500px;
+                background-color: palegoldenrod;
+                padding: 150px;
+                box-sizing: border-box;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: palegreen;
+            }
+        </style>
+
+        ③相对定位
+        <style>
+            .box{
+                width: 500px;
+                height: 500px;
+                background-color: palegoldenrod;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: palegreen;
+                position: relative;
+                top: 150px;
+                left: 150px;
+            }
+        </style>
+
+        ④绝对定位
+        <style>
+            .box{
+                width: 500px;
+                height: 500px;
+                background-color: palegoldenrod;
+                position: relative;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: palegreen;
+                position: absolute;
+                top: 150px;
+                left: 150px;
+            }
+        </style>
+
+        ⑤绝对定位
+        <style>
+            .box{
+                width: 500px;
+                height: 500px;
+                background-color: palegoldenrod;
+                position: relative;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: palegreen;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -100px;
+                margin-left: -100px;
+            }
+        </style>
+
+        ⑥位移
+        <style>
+            .box{
+                width: 500px;
+                height: 500px;
+                background-color: palegoldenrod;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: palegreen;
+                transform: translate(150px,150px);
+            }
+        </style>
+
+
+       2）子元素宽高未知
+       ①绝对定位配合位移
+        <style>
+            .box{
+                width: 500px;
+                height: 500px;
+                background-color: palegoldenrod;
+                position: relative;
+            }
+            .box1{
+                background-color: palegreen;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+
+
+    --> 
+</body>
+</html>

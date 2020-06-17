@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left{
+            width: 200px;
+            height: 300px;
+            background-color: palegreen;
+            float: left;
+        }
+        .right{
+            width: 300px;
+            height: 300px;
+            background-color: paleturquoise;
+            float: right;
+        }
+        .center{
+            height: 300px;
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        16、三栏布局
+        左右两侧宽度固定，中间元素的宽度跟着页面缩放
+        1）绝对定位
+        <div class="box">
+            <div class="left"></div>
+            <div class="center">哈哈哈哈哈哈哈哈哈哈或或或或或或或</div>
+            <div class="right"></div>
+        </div>
+
+         <style>
+        .box{
+            position: relative;
+        }
+        .left{
+            width: 200px;
+            height: 300px;
+            background-color: palegreen;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .right{
+            width: 300px;
+            height: 300px;
+            background-color: paleturquoise;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .center{
+            height: 300px;
+            background-color: plum;
+            margin-left: 200px;
+            margin-right: 300px;
+        }
+        </style>
+        2）浮动法
+        <div class="box">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="center">哈哈哈哈哈哈哈哈哈哈或或或或或或或</div>
+        </div>
+        <style>
+            .left{
+                width: 200px;
+                height: 300px;
+                background-color: palegreen;
+                float: left;
+            }
+            .right{
+                width: 300px;
+                height: 300px;
+                background-color: paleturquoise;
+                float: right;
+            }
+            .center{
+                height: 300px;
+                background-color: plum;
+            }
+        </style>
+
+
+
+     -->
+     <div class="box">
+         <div class="left"></div>
+         <div class="right"></div>
+         <div class="center">哈哈哈哈哈哈哈哈哈哈或或或或或或或</div>
+     </div>
+</body>
+</html>

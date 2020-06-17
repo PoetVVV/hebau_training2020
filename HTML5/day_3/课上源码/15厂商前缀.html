@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        12、厂商前置
+        解决浏览器对C3新特性的支持
+        浏览器     厂商前缀
+        谷歌       -webkit-
+        火狐       -moz-
+        IE         -ms-
+        苹果       -webkit-
+        欧朋       -o-
+
+        */
+        .box{
+            width: 1200px;
+            height: 600px;
+            /*background-color: red;*/
+            /*-webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius:50%;
+            -ms-border-radius:50%;
+            border-radius: 50%;*/
+
+            background:-webkit-radial-gradient(left top,red,orange,yellow,green,blue,purple);
+            background:-moz-radial-gradient(left top,red,orange,yellow,green,blue,purple);
+            background:-o-radial-gradient(left top,red,orange,yellow,green,blue,purple);
+            background:-ms-radial-gradient(left top,red,orange,yellow,green,blue,purple);
+            background:radial-gradient(left top,red,orange,yellow,green,blue,purple);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

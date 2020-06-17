@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        10、过渡
+        1）作用
+        使元素从一个样式逐渐变为另外一个样式
+        2）过渡的属性——必须
+        transition-property:属性1,属性2,...;
+        简写all
+
+        可以过渡的属性：
+        ①取值为颜色
+        ②取值为数值
+        ③阴影
+        ④背景渐变
+        ⑤转换
+
+        3）过渡的持续时间——必须
+        transition-duration:时间1,时间2,...;
+        默认为0s|0ms
+
+        4）过渡的速度变化类型——可选
+        transition-timing-function:;
+        ease  默认值  先加速后减速
+        ease-in  加速
+        ease-out  减速
+        ease-in-out  先加速后减速
+        linear  匀速
+
+        5）延迟时间——可选
+        transition-delay:;
+        默认为0s|0ms
+        可以取负值，表示把这段时间的效果跳过取
+
+        6）简写
+        transition: 过渡的属性(all) 持续时间 速度变化类型 延迟时间;
+        
+        */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 过渡的属性 */
+            /* transition-property:all; */
+            /* 过渡的持续时间 */
+            /* transition-duration: 2s; */
+            /* 过渡的速度变化类型 */
+            /* transition-timing-function: linear; */
+            /* 延迟时间 */
+            /* transition-delay: -1s; */
+
+            transition:all 2s -1s linear ;
+        }
+        .box:hover{
+            background-color: green;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

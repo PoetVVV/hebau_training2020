@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        9、转换 变型
+        1）作用
+        使元素在位置或者形状上发生一定的改变
+        2）属性
+        transform:translate() rotate() scale() skew();
+                     位移       旋转     缩放    倾斜
+        3）位移  单位px  %
+        transform:translate(x,y);
+        当只有一个值，表示水平方向位移的距离
+        当有两个值，表示水平和垂直方向位移的距离
+
+        transform:translateX();
+        transform:translateY();
+
+        对行内元素不生效
+
+        4）旋转 单位deg
+        transform:rotate(30deg);
+        当取正值，顺时针旋转
+        当取负值，逆时针旋转
+
+        元素默认的中心点为宽高的一半
+        transform-origin:;  可以修改元素的中心点
+
+        注意：当位移和旋转同时存在，建议位移写在旋转的前面(旋转会旋转整个坐标轴)
+
+        5）缩放  取值number 0-1：缩小  >1：放大 默认为1
+        transform:scale(x,y);
+        当只取一个值，等比例缩放
+        当取两个值，表示水平和垂直方向
+
+        transform:scaleX();
+        transform:scaleY();
+
+        6）倾斜  单位deg
+        transform:skew(x,y);
+        当只取一个值，表示水平方向倾斜的弧度
+        当取两个值，表示水平方向和垂直方向倾斜的弧度
+
+        transform:skewX();
+        transform:skewY();
+
+        注意：倾斜弧度和屏幕不能是直角
+        
+        */
+        .box{
+            width: 234px;
+            height: 300px;
+            background-color: red;
+            margin: 100px;
+            /* transform-origin: right bottom; */
+            transition: all 1s;
+            /* transform: rotate(20deg); */
+        }
+        .box:hover{
+            /* transform: translate(0,-20px); */
+            /* transform: translateY(-20px); */
+            /* transform: translateX(-20px); */
+            /* transform: translate3d(0,-20px,0); */
+
+            /* transform: rotate(360deg); */
+            /* transform:  rotate(45deg) translate(50px,50px); */
+            /* transform: rotate(0deg); */
+
+            /* transform: scale(1.5,.8); */
+            /* transform: scale(1.5); */
+
+            /* transform: skew(30deg,60deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        哈哈
+    </div>
+    
+</body>
+</html>

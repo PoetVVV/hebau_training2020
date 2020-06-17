@@ -1,0 +1,184 @@
+/* ============ 全局 ============  */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    background-color: #fff;
+}
+div{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.container{
+    margin: 0 auto;
+    width: 1226px;
+}
+
+
+/*  ============  最顶部导航栏  ============  */
+.topbar{
+    position: relative;
+    height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #333;
+}
+/*   最顶部导航栏-左   */
+.topbar .topbar-nav{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+/*  最顶部导航栏-右   */
+.topbar .topbar-info{
+    position: relative;
+    float: right;
+    height: 40px;
+    color: #b0b0b0;
+    background: #333;
+}
+.topbar .topbar-car{
+    position: relative;
+    float: right;
+}
+.topbar a{
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+}
+
+
+/*    ============ 顶部标头 ============  */
+.header{
+    height: 100px;
+    position: relative;
+}
+/*    logo    */
+.header-logo{
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+}
+/*    导航    */
+.header-nav{
+    float: left;
+    width: 850px;
+}
+.nav-list{
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 1100px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    list-style-type: none;
+    font-size: 16px;
+}
+.nav-item{
+    float: left;
+}
+.nav-item .link{
+    display: block;
+    padding: 26px 10px 38px;
+    /* padding: 26px 8px 38px; */
+    color: #333;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+
+/*  ============  主页面  ============  */
+.main-page{
+    background: #f5f5f5;
+    /* padding-top: 4px;
+    padding-bottom: 12px; */
+}
+
+/*  =====  砖块图  =======   */
+
+
+
+/*    上部图题    */
+.brick-box-head{
+    position: relative;
+    height: 58px;
+}
+.brick-box-head .more{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*     下部图     */
+.brick-box-pic{
+    margin-left: -14px;
+}
+
+/*     左部（大图）    */
+.brick-l-b{
+    float: left;
+}
+.brick-l-b img{
+    width: 234px;
+    height: 614px;
+}
+/*                 右部              */
+.brick-r{
+    width: 992px;
+    float: left;
+}
+.brick-r-items{
+    width: 234px;
+    height: 300px;
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+.brick-r-items img{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 18px;
+}
+.brick-r-desc, .brick-r h3, .brick-r-price{
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.brick-r h3{
+    height: 21px;
+    font-size: 14px;
+    color: #333;
+} 
+
+
+
+
+
+
+
+
+/*   ============  长条展示图  ============  */
+.long-bar-pic img{
+    width: 1226px;
+    height: 120px;
+}
+
