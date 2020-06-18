@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <script>
+        /* 
+        12、获取页面元素
+        1）通过ID
+        document.getElementById('IDName')
+
+        2）通过tagName
+        document.getElementsByTagName('标签名')
+        返回集合
+
+        3）通过className(IE8以上支持)
+        document.getElementsByClassName('类名')
+        返回集合
+
+        4）通过css选择器(IE8及其以上)
+        document.querySelector('css选择器')  返回符合条件的第一个元素
+        document.querySelectorAll('css选择器') 返回符合条件的所有元素的集合
+
+        
+        */
+       var div = document.getElementsByTagName('div');
+       console.log(div);
+
+       var div1 = document.getElementsByClassName('box');
+       console.log(div1);
+
+       var div2 = document.querySelector('.box');
+       console.log(div2);
+
+       var div3 = document.querySelectorAll('.box');
+       console.log(div3);
+       
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        11、定时器
+        1）语法
+        setInterval(函数,毫秒数)
+        注意：定时器默认不会停止
+        setInterval(function(){console.log('hello');},1000);
+
+        function fn(){
+            console.log('hello');
+        }
+        setInterval(fn,1000);
+
+        2）停止定时器
+        clearInterval(编号)
+        
+        
+        
+        */
+    </script>
+    <button id="btn">点击我</button>
+    <script>
+        function fn(){
+            console.log('hello');
+        }
+        var item = setInterval(fn,1000);
+
+        //获取按钮
+        var btn = document.getElementById('btn');
+        //绑定点击事件
+        btn.onclick = function(){
+            clearInterval(item);
+        };
+
+
+    </script>
+</body>
+</html>

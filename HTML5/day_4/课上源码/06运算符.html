@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        6、运算符
+        1）算数运算符
+        +  -  *  /  %(模|取余) ++  --
+
+        +:遇到字符串直接进行字符串拼接，返回string 类型
+        - * / %:遇到字符串直接转换为number类型进行计算，能正常的转换，返回计算的结果，如果不能正常的转换，返回NaN
+
+        ++:自增 自己+1  i++  相当于 i = i + 1
+        --:自减 自减-1  i--  相当于 i = i - 1
+
+        不管前++还是后++，变量自身都+1
+        前++：先执行+1，再返回
+        后++：先返回，再执行+1
+
+        2）比较运算符
+        只能比较两个值的大小，返回布尔值
+        >  <  >=  <=  ==  !=  ===  !==
+        ==:等于  只判断数值
+        ===：全等  既判断数值又判断数据类型
+
+        3）逻辑运算符
+        链接多个表达式，返回布尔值
+        &&  逻辑与  所有表单式都为true，结果就为true；只要有一个表达式为false，结果就为false
+        ||  逻辑或  只要有一个表达式为true，结果就为true；所有表单式都为false，结果才为false
+        !   逻辑非  取反
+
+        逻辑与>逻辑或
+
+        4）赋值运算符
+        =   赋值  等号右侧赋值给等号左侧
+        +=  sum+=i  相当于 sum = sum + i;
+        -=  i-=j  相当于 i = i - j
+        *=  i*=j  相当于 i = i * j
+        /=  i/=j  相当于 i = i / j
+        %=  i%=j  相当于 i = i % j
+        
+        */
+    </script>
+    <script>
+        // var num1 = 5;
+        // var num2 = 2;
+        // console.log(num1 + num2);//7
+        // console.log(num1 - num2);//3
+        // console.log(num1 * num2);//10
+        // console.log(num1 / num2);//2.5
+        // console.log(num1 % num2);//1
+
+        // var num1 = '5';
+        // var num2 = 2;
+        // console.log(num1 + num2);//52 
+        // console.log(num1 - num2);//3
+        // console.log(num1 * num2);//10
+        // console.log(num1 / num2);//2.5
+        // console.log(num1 % num2);//1
+
+        // var num1 = '5B';
+        // var num2 = 2;
+        // console.log(num1 + num2);//5B2  string 
+        // console.log(num1 - num2);//NaN
+        // console.log(num1 * num2);//NaN
+        // console.log(num1 / num2);//NaN
+        // console.log(num1 % num2);//NaN
+
+        // console.log(1+'1'+5+3);//1153
+
+        // var i = 5;
+        // i++;//i = i + 1;
+        // console.log(i);//6
+
+        // var i = 5;
+        // ++i;//i = i + 1;
+        // console.log(i);//6
+
+        // var i = 5;
+        // var j = ++i;
+        // console.log(i);//6
+        // console.log(j);//6
+
+        // var i = 5;
+        // var j = i++;
+        // console.log(i);//6
+        // console.log(j);//5
+
+        // console.log(5 == '5');//true
+        // console.log(5 != '5');//false
+        // console.log(5 === '5');//false
+        // console.log(5 !== '5');//true
+
+        // console.log(3 > '12');//false
+        // console.log('3' > '12');//true
+
+        // console.log(!(3>2));//f
+        // console.log(3 > 2 || 3 < 2 && 5 < 8);//t
+        // console.log(3 < 2 || 3 > 2 && 5 < 8);//t
+        // console.log(3 < 2 && 7 >5);//f
+        // console.log(3 > 2 || 7 >5);//t
+        
+
+    </script>
+</body>
+</html>

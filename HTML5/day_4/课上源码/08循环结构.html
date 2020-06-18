@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: red;
+            font-size: 60px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /* 
+        8、for循环
+        1）语法
+        for(循环变量;循环条件;循环规律){
+            循环体
+        }
+
+        2）原理
+        ①先判断循环变量是否满足循环条件，不满足，直接退出循环
+        ②满足，进到循环内部，执行循环体
+        ③执行循环规律，让循环变量的值发生了改变
+        ④判断变量是否满足条件，不满足，直接退出循环
+        ⑤满足，进到循环内部，执行循环体
+        ⑥执行循环规律，让循环变量的值发生了改变
+        ⑦判断变量是否满足条件，不满足，直接退出循环
+
+        for(语句1;语句2;语句3){
+            语句4
+        }
+        1——2 ——4——3——2——4——3——2
+
+        3）注意
+        ①在for循环内输出整个过程，在for循环外输出最后的结果
+        ②声明变量在for循环外，初始化为一个值，后面的值都需要改变，声明变量在for循环内部，每次进入循环内都初始化为当前值
+
+        4）for循环和if嵌套
+
+        5）for循环嵌套
+        for(循环变量;循环条件;循环规律){
+            for(循环变量;循环条件;循环规律){
+                循环体;
+            }
+        }
+
+        原理：
+        外层循环走一下，内层循环走一圈
+        外层循环遍历行，内层循环遍历列
+        外层循环控制内层循环执行的次数
+        内层循环控制实际的输出
+
+        
+        */
+    </script>
+    <script>
+        /* for(var i = 1;i <= 5;i++){
+            console.log('hello');
+        } */
+
+        /* for(var i = 1; i <= 100; i++){
+            console.log(i);
+        }
+        console.log('for循环后面'+i); */
+
+        // 控制台输出1-100的和
+        //1+2+3+4+5+...+100 = 5050
+       
+        /* var sum = 0;
+        // 拿到1-100
+        for(var i = 1; i <= 100; i++){
+            sum += i;
+        }
+        console.log(sum); */
+        /* 
+        0+1 = 1
+        1+2 = 3
+        3+3 = 6
+        6+4 = 10
+        10+5 = 15
+        ...
+        sum + i = sum=>sum = sum + i
+        简写：
+        sum += i;
+
+        */
+
+        // 求1-100之间奇数和偶数的和
+        // var oddSum = 0;
+        // var evenSum = 0;
+        // // 拿到1-100
+        // for(var i = 1; i <= 100; i++){
+        //     // 判断奇偶数
+        //     if(i % 2 === 0){
+        //         evenSum += i;
+        //     }else{
+        //         oddSum += i;
+        //     }
+        // }
+        // console.log('偶数的和：'+evenSum);
+        // console.log('奇数的和：'+oddSum);
+
+
+        for(var j = 1; j <= 4; j++){
+            for(var i = 1; i <= 4; i++){
+                document.write('❤');
+            }
+            document.write('<br/>');
+        }
+        
+    </script>
+</body>
+</html>

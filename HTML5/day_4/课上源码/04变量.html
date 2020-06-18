@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        4、变量
+        1）作用
+        存储数据的容器
+
+        2）声明变量
+        var 变量名;
+
+        3）变量赋值
+        变量名 = 值;
+
+        4）变量的初始化
+        声明的变量的同时赋值，称为变量的初始化
+        var 变量名 = 值;
+
+        5）一条语句可以声明多个变量，用逗号隔开
+        var 变量1,变量2,...;
+
+        6）声明变量没有赋值，默认为undefined
+        var x;//undefined(未定义)
+
+        7）没有声明，没有赋值，直接输出变量，报错
+        console.log(x);
+
+        8）js中重新声明变量，值不会丢失
+        var x = 5;
+        var x;//重新声明
+        console.log(x);//5
+
+        9）重新赋值，后面的值会替换前面的值
+        var x = 5;
+        x = 10;//重新赋值
+        console.log(x);//10
+
+        10）声明提升
+        变量声明提升到所在作用域的顶部，赋值留在原地
+        console.log(x);//undefined
+        var x = 10;
+
+        相当于：
+        var x;//声明提升
+        console.log(x);
+        x = 10;//赋值留在原地
+
+        11）不写var的情况
+        不写 var声明的变量为全局变量
+
+        12）标识符命名规则
+        ①区分大小写
+        ②可以包含数字、字母、下划线、$
+        ③不能以数字开头
+        ④不能是关键字和保留字
+        ⑤多个单词建议驼峰命名法
+        第一个单词的首字母小写，后面单词的首字母大写
+        userName
+        ⑥见名知意
+
+        */
+    </script>
+    <script>
+
+        // var x;//声明变量
+        // x = 5;//变量赋值
+        // console.log(x);//5
+        // console.log('x');//x
+
+        // var x = 5;//声明变量的同时赋值
+        // console.log(x);//5
+
+        // var x = 5;
+        // var y = 6;
+        // var z = x + y;
+        // console.log(z);//11
+
+        // var x = 5,y = 6,z = x + y;
+        // console.log(z);
+
+        // var x,y,z;
+        // x = 5;
+        // y = 6;
+        // z = x + y;
+        // console.log(z);
+
+        // var x;//声明变量没有赋值，默认为undefined
+        // console.log(x);
+
+        // console.log(x);//报错
+
+        // var x = 5;
+        // var x;
+        // console.log(x);//5
+
+        // var x = 5;
+        // x = 10;
+        // x = 100;
+        // console.log(x);//100
+
+        // var x = 5;
+        // var x = 100;
+        // console.log(x);//
+
+        // console.log(x);//undefined
+        // var x = 10;
+        // console.log(x);//10
+
+        // x = 5;
+        // y = 6;
+        // z = x + y;
+        // console.log(z);//10
+
+        // var a = 10;
+        // console.log(A);
+        
+
+        
+
+
+    </script>
+</body>
+</html>

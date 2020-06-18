@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        setInterval(function(){console.log('hello!');
+        }, 1000)
+    </script> -->
+    <button id="btn">点🐔</button>
+    <script>
+        function fn(){
+            console.log('你好');
+        }
+        var item = setInterval(fn, 1000);
+
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            clearInterval(item);
+        }
+    </script>
+</body>
+</html>

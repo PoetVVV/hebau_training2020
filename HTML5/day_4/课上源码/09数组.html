@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        9、数组
+        1）定义
+        数组是使用单独的变量名来存储一系列的值
+        2）作用
+        存储数据的容器
+        数据：多条数据、有序
+        3）创建
+        ①字面量法
+        var 数组名 = [];//空数组
+        var 数组名 = [数组元素1,数组元素2,...];
+        //               0          1
+        数组元素可以是 ‘任何数据类型’
+
+        4）数组的调用
+        数组名[index]
+        index：下标、索引，从0开始
+
+        5）数组的空位
+        两个逗号之间没有值，称为数组的空位
+
+        6）数组的遍历
+        ①for循环
+        for(var i = 0;i < 数组名.length; i++){
+            数组名[i]//i 表示数组下标 i为number类型
+        }
+
+        ②for in快速遍历
+        for(var i in 数组名){
+            数组名[i]//i  表示下标 i为string类型
+        }
+
+        7）length属性
+        数组名.length
+        返回数组的长度，数据类型为number
+        数组的长度 = 最后一个下标 + 1
+
+        
+        */
+    </script>
+    <script>
+        // var arr = [123,666,'abc',{},[1,2,3]];
+        // //          0   1     2  3      4
+        // console.log(arr);
+        // console.log(typeof arr);
+
+        // var arr = [10,20,30,40,50];
+        // console.log(arr);
+        // console.log(arr[2]);//30
+
+        // arr[0] = 'hello';
+        // console.log(arr);
+        // arr[6] = 6;
+        // console.log(arr);
+
+        // console.log(arr[10]);//下标越界 undefined
+
+        // var arr = [10,20,30,40,50,60,70,80];
+        /* for(var i = 0;i < arr.length;i++){
+            console.log(arr[i]);
+        } */
+
+        /* for(var i in arr){
+            console.log(arr[i],typeof i);
+        } */
+
+
+    </script>
+</body>
+</html>

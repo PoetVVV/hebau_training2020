@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        程序 = 数据 + 算法
+        数据：变量、数组、对象
+        算法：分支结构、循环结构
+        分支结构：根据不同的条件，做出不同的选择
+        循环结构：需要重复相同操作
+
+        7、分支结构
+        1）单分支
+        if(条件){满足条件执行的语句}
+
+        2）双分支
+        if(条件){满足条件执行的语句}else{不满足条件执行的语句}
+
+        3）多分支
+        if(条件){满足当前条件执行的语句}
+        else if(条件){满足当前条件执行的语句}
+        else if(条件){满足当前条件执行的语句}
+        ...
+        else{以上条件都不满足执行的语句}
+
+        注意：
+        ①else可以省略
+        ②条件一旦满足，就不再往下执行
+
+        4）相互嵌套
+        
+        */
+    </script>
+    <script>
+        // var age = 20;
+        // if(age >= 18){
+        //     console.log('成年，可以上网'+age);
+        // }else{
+        //     console.log('未成年，不可以上网'+age+'岁');
+        // }
+
+        // 成绩
+        // >= 90 A
+        // >= 80 B
+        // >= 70 C
+        // >= 60 D
+        // 否则 不及格
+
+        var score = 90;
+        if(score >= 0 && score <= 100){
+            if(score >= 90){
+                if(score === 100){
+                    console.log('你太棒了');
+                }else{
+                    console.log('A:'+score);
+                }
+            }
+            else if(score >= 80){
+                console.log('B:'+score);
+            }
+            else if(score >= 70){
+                console.log('C:'+score);
+            }
+            else if(score >= 60){
+                console.log('D:'+score);
+            }else{
+                console.log('不及格');
+            }
+        }else{
+            console.log('请输入正确的成绩');
+        }
+
+    </script>
+</body>
+</html>

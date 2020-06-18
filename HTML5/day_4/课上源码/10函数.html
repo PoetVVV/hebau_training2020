@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        10、函数
+        1）定义
+        函数是由事件驱动或者被调用才执行的可重复使用的代码块
+
+        2）函数的声明
+        ①function命名法
+        function 函数名(形参1,形参2,...){
+            函数体
+        }
+
+        ②函数表达式法
+        var 变量名 = function(形参1,形参2,...){
+            函数体
+        };
+
+        ③区别
+        function命名法调用可以写在声明前面(函数声明提升)
+        函数表达式法调用不可以写在声明前面(变量声明提升，赋值留在原地)
+
+        3）函数的调用
+        函数名(实参1,实参2,...);
+        变量名(实参1,实参2,...);
+
+        4）函数声明提升到所在作用域的顶部
+
+        5）函数的参数
+        ①形式参数
+        简称形参
+        形参时函数声明时写在小括号内的参数
+        形参是局部变量，不用var声明
+        多个形参用逗号隔开
+
+        ②实际参数
+        简称实参
+        实参是函数调用时写在小括号内的参数
+        实参实际上是给形参赋值
+        多个实参之间用逗号隔开
+
+        ③实参和新参的关系
+        实参和形参一一对应
+        实参个数 > 形参个数  多余的实参直接忽略
+        实参个数 < 形参个数  多余的形参为undefined
+
+        6）作用域
+        ①全局作用域   函数外部
+        ②函数作用域   函数内部
+
+        变量：
+        全局变量：可以在任何位置使用
+        局部变量：只能在函数内部使用
+        ①形参
+        ②在函数内部用var声明的变量
+
+
+        */
+    </script>
+    <script>
+        // fn();
+        // function fn(){
+        //     console.log('hello');
+        // }
+        // fn();
+        // fn();
+
+        // fn();
+        // var fn = function(){
+        //     console.log('hello');
+        // };
+        // fn();
+        // fn();
+
+        // function fn(a,b){
+        //     console.log(a,b);
+        // }
+        // fn(10,20);
+        // fn(100,200,300,400);
+        // fn(3);
+
+        // function fn(a) {
+        //     console.log(a);
+        // }
+        // fn(10);
+        // console.log(a);
+
+        // function fn(){
+        //     var a = 10;
+        //     console.log(a);
+        // }
+        // fn();
+        // console.log(a);
+
+        // function fn(){
+        //     a = 10;//全局变量
+        //     console.log(a);
+        // }
+        // fn();
+        // console.log(a);
+
+        // var a = 100;
+        // function fn(){
+        //     var a = 10;
+        //     console.log(a);//10
+        // }
+        // fn();
+        // console.log(a);//100
+
+        // function fn(){
+        //     console.log(a);//undefined
+        //     var a = 10;
+        // }
+        // fn();
+        // console.log(a);//报错
+        
+    </script>
+</body>
+</html>
