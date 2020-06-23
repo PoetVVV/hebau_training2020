@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01-JDBC/01-JDBC.iml" filepath="$PROJECT_DIR$/01-JDBC/01-JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-reflect/02-reflect.iml" filepath="$PROJECT_DIR$/02-reflect/02-reflect.iml" />
       <module fileurl="file://$PROJECT_DIR$/数据库.iml" filepath="$PROJECT_DIR$/数据库.iml" />
     </modules>
   </component>
