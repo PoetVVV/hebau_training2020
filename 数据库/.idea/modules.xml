@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01-JDBC/01-JDBC.iml" filepath="$PROJECT_DIR$/01-JDBC/01-JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-reflect/02-reflect.iml" filepath="$PROJECT_DIR$/02-reflect/02-reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-orm/03-orm.iml" filepath="$PROJECT_DIR$/03-orm/03-orm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stmng/stmng.iml" filepath="$PROJECT_DIR$/stmng/stmng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-server/web-server.iml" filepath="$PROJECT_DIR$/web-server/web-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/数据库.iml" filepath="$PROJECT_DIR$/数据库.iml" />
     </modules>
   </component>
